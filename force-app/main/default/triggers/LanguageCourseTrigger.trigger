@@ -1,3 +1,4 @@
 trigger LanguageCourseTrigger on Language_Course__c (after insert, after update, after delete) {
-    // <write your own notification code>
-    }
+    EmailManager.sendMail('medinacantosangel@gmail.com', 'Trailhead Trigger Tutorial','Trigger activado');
+    EmailManager.sendMail('christian.valenzuelamoreno@gmail.com', 'Trailhead Trigger Tutorial','Trigger activado');
+}
